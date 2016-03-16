@@ -9,9 +9,9 @@ This project began as a proof of concept for the ANACONDA 2014/2015 Aerospace Se
 
 “Design and construct an autonomous tracking and communication support system for an antenna to be used to track unmanned aircraft during flight.”
 
-If you want to check this project out and others follow this link to the CU senior projects page. 
+If you want to check this project out and others follow this link to the CU senior projects page and go to the 2015 projects page . 
 
-http://www.colorado.edu/aerospace/current-students/undergraduates/senior-design-projects?qt-qt_senior_design_2014_15=1#qt-qt_senior_design_2014_15
+[CU Aerospace Senior Projects](http://www.colorado.edu/aerospace/current-students/undergraduates/senior-design-projects?qt-qt_senior_design_2014_15=1#qt-qt_senior_design_2014_15)
 
 The underlying principle here is that if you have two GPS locations provided by two different recivers a position vector can be calculated between them. This can be used to aim a directional antenna or in the case of this project a laser from one object (the base station) to the other object (Target) at theoretically any distance which is only limited to your ability to provide the base station with the targets GPS location 
 GPS vector description
