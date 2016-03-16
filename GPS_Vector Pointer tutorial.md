@@ -24,11 +24,11 @@ Video of operation
 
 ##Suggested reading
 If anything I have discussed so far doesn’t quite click here are some relevant tutorials to get you up to speed and give you everything you need to know to complete this project.  
-GPS
-https://learn.sparkfun.com/tutorials/gps-basics
-https://learn.sparkfun.com/tutorials/xbee-shield-hookup-guide
-https://learn.sparkfun.com/tutorials/serial-communication
-https://learn.sparkfun.com/tutorials/exploring-xbees-and-xctu-retired
+
+[GPS basics](https://learn.sparkfun.com/tutorials/gps-basics)  
+[XBee sheild hookup guide](https://learn.sparkfun.com/tutorials/xbee-shield-hookup-guide)  
+[Serial communication](https://learn.sparkfun.com/tutorials/serial-communication)  
+[Configuring XBe's](https://learn.sparkfun.com/tutorials/exploring-xbees-and-xctu-retired)  
 
 https://learn.sparkfun.com/tutorials/how-to-solder---through-hole-soldering
 https://learn.sparkfun.com/tutorials/using-github
