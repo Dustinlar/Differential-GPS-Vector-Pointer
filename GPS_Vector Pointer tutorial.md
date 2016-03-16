@@ -7,18 +7,14 @@ This project began as a proof of concept for the ANACONDA 2014/2015 Aerospace Se
 
 >“Design and construct an autonomous tracking and communication support system for an antenna to be used to track unmanned aircraft during flight.”
 
-If you want to check this project out and others follow this link to the CU senior projects page and go to the 2015 projects page . 
+If you want to check this project out and others follow this link to the CU senior projects page and go to the 2015 projects page. 
 
 [CU Aerospace Senior Projects](http://www.colorado.edu/aerospace/current-students/undergraduates/senior-design-projects?qt-qt_senior_design_2014_15=1#qt-qt_senior_design_2014_15)
 
-
 ##This Project
-The underlying principle here is that if you have two GPS locations provided by two different recivers a position vector can be calculated between them. This can be used to aim a directional antenna or in the case of this project a laser from one object (the base station) to the other object (Target) at theoretically any distance which is only limited to your ability to provide the base station with the targets GPS location 
-###GPS vector description
-The theory behind this is very simple and is shown in the figure below. Knowing the horizontal and the vertical difference between points you can use the arc tan function to give you the angle that you need. 
+The underlying principle here is that if two GPS locations are provided by two different recivers a position vector can be calculated between them. This can be used to aim a directional antenna or in the case of this project a laser from one object (the base station) to the other object (Target) at theoretically any distance which is only limited to your ability to provide the base station with the targets GPS location. The theory behind this is very simple and is shown in the figure below. Knowing the horizontal and the vertical difference between points you can use the inverse tangent function to give you the angle that you need. 
 Picture displaying GPS Vector
 
-Pointing\Angle = arctan{\frac{Target\Latitude - Base\Latitude}{Target\Longitude - Base\Longitude}}
 
 The video below demonstrates the basic functionality of the system. Showing the laser track the target object as it moves
 Video of operation
@@ -26,13 +22,15 @@ Video of operation
 ##Required Materials	
 Now that I have gotten you excited about the project and have you itching to try it yourself I will walk you through the steps to create this project on your own and see what cool things you can do with it. This projects requires a decent amount of hardware but to put all of it together is relatively simple and minimal soldering 
 
+### SparkFun Supplies
+
 <script src="https://www.sparkfun.com/wish_lists/123390.js"></script>
 
-Other
+### Mechanicle Supplies
 
-3d Printer/ Solidworks
+*3d Printer/ Solidworks
 
-Screws
+
 *4x 8-32 B&N
 *4x 1/2” spacers with #5 sized hole
 *4x 3-48 B&N
@@ -107,5 +105,5 @@ Warning! Laser can be harful to eyes so if you are the one holding the target ob
 ##Resources and going further
 GPS parsing info
 This could be made much more reactive using better GPS recivers and some more comprehensive code so why not give it a try
-
+This also applys in the Z direction but 
 maybe even take what I have created and make something even cooler with the technology
