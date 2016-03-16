@@ -17,10 +17,11 @@ The underlying principle here is that if you have two GPS locations provided by 
 ###GPS vector description
 The theory behind this is very simple and is shown in the figure below. Knowing the horizontal and the vertical difference between points you can use the arc tan function to give you the angle that you need. 
 Picture displaying GPS Vector
+
+Pointing\Angle = arctan{\frac{Target\Latitude - Base\Latitude}{Target\Longitude - Base\Longitude}}
+
 The video below demonstrates the basic functionality of the system. Showing the laser track the target object as it moves
 Video of operation
-
-
 
 ##Required Materials	
 Now that I have gotten you excited about the project and have you itching to try it yourself I will walk you through the steps to create this project on your own and see what cool things you can do with it. This projects requires a decent amount of hardware but to put all of it together is relatively simple and minimal soldering 
@@ -58,9 +59,7 @@ _Note: You will have to take off the Xbee sheild to mount on the final system_
 * Create two complete XBee sheild assemblyes 
 * Modify GPS wires so that they can connect to redboard inputs 
 * Modify Servo wires to allow plug into redboard
-* Solder stranded wire to laser
-
-* On the base 
+* Solder stranded wire to laser and solder the other ends to X and X
 
 Connection diagram (fritzing)
 
@@ -72,12 +71,14 @@ I created Solidworks models to support the electronics parts and to hold the ser
 * Place redBoard without xbee shield in target case so that the USB port is facing the openingand screw 3 or 4 (X) bolts into the available holes. 
 * attach 9V Battery holder using (x)bolts
 * There is a location for the GPS receiver sunk into the base, use double-sided tape or a glue gun to hold it in place
-* On the target modual Plug in GPS receiver to both modules.
+* On the target modual Plug in GPS receiver to both modules.  
+
 ####Base Station
 #####Bottom
 * Place the two ¼”bolts used to mount on tripod in first since you will not be able to once the redboard is installed. 
 * Place redboard into base using (X) bolts and spacers so that it stays above mounting bolts
-* Screw battery holder onto holes located on the wall of case
+* Screw battery holder onto holes located on the wall of case  
+
 #####Top
 * Remove servo disk from servo
 * Screw bolts into 4 counting holes of servo which constrains servo in the correct location
@@ -86,17 +87,22 @@ I created Solidworks models to support the electronics parts and to hold the ser
 * Slide laser into laser mount with wires coming out the back screw 5/8 nut onto front of laser to hold it in place put wires through the available hole(am I going to solder the leads?)
 * Place GPS receiver in indent made in top with double-sided tape with wires going through the available hole
 * Attach wires as discussed above and place top onto base, should just slide into place
+
 ## Code
-Need to include these librarys along with the code I added
-Software serial.h
-tinyGPS.h
-Servo.h
+Here is the basic code to get this system working. you will need to upload the files to their respective systems. There is alot of room for you to play around with these to try an improve the speed or accuracy of the system so see what you can do. You will also need to include these libraries. depending on what version of Arduino you have they may be already included in the standard library.
+* Software serial.h
+* tinyGPS.h
+* Servo.h
+### Target
+
+### Base
+
+
 
 ##Operation
 To make sure that the system aligns with the earth reference ensure the correct orientation using a compass by lining up the arrow on the Base Station top (This could be done electronically using a magnetometer). Once powered up Both systems will sit idly as they get satellite lock. Once both have made a lock(maybe take up to a minute) the laser will turn on And the servo will point to where it believes the target object is(if it is substantially off you might need to make sure the whole system is pointing in the right direction(since it is limited in where it works) and that you alined everything using a compass. This will update every few seconds to point at the udated location of the target object which the laser should be hitting. 
 
 Warning! Laser can be harful to eyes so if you are the one holding the target object it would be a good safety measure to have laser
-
 
 ##Resources and going further
 GPS parsing info
