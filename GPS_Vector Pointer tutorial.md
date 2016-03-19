@@ -13,34 +13,33 @@ If you want to check this project out and others follow this link to the CU seni
 
 ##This Project
 The underlying principle here is that if two GPS locations are provided by two different recivers a position vector can be calculated between them. This can be used to aim a directional antenna or in the case of this project a laser from one object (the base station) to the other object (Target) at theoretically any distance which is only limited to your ability to provide the base station with the targets GPS location. The theory behind this is very simple and is shown in the figure below. Knowing the horizontal and the vertical difference between points you can use the inverse tangent function to give you the angle that you need. 
-Picture displaying GPS Vector
+Picture displaying GPS Vector.
 
 
 The video below demonstrates the basic functionality of the system. Showing the laser track the target object as it moves
 Video of operation
 
-##Required Materials	
+##Required Materials	<a id="serial-dtr"></a>
 Now that I have gotten you excited about the project and have you itching to try it yourself I will walk you through the steps to create this project on your own and see what cool things you can do with it. This projects requires a decent amount of hardware but to put all of it together is relatively simple and minimal soldering 
+
 
 ### SparkFun Supplies
 
 <script src="https://www.sparkfun.com/wish_lists/123390.js"></script>
 
-### Mechanicle Supplies
+### Mechanicle Supplies 
 
-*3d Printer/ Solidworks
-
-
-*4x 8-32 B&N
-*4x 1/2” spacers with #5 sized hole
-*4x 3-48 B&N
-*8x 2-56 N
-*4x 2-56 ½”
-*4x 2-56 ¾”
-*6x 1-72 ½”
-*6x 1-72 N
-
-Tripod
+*Access to a 3D printer
+*Tripod or other platform
+*Mounting Hardware
+**4x 8-32 B&N
+**4x 1/2” spacers with #5 sized hole
+**4x 3-48 B&N
+**8x 2-56 N
+**4x 2-56 ½”
+**4x 2-56 ¾”
+**6x 1-72 ½”
+**6x 1-72 N
 
 ##Suggested reading
 If anything I have discussed so far doesn’t quite click here are some relevant tutorials to get you up to speed and give you everything you need to know to complete this project.  
