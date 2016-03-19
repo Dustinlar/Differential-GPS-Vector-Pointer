@@ -13,33 +13,50 @@ If you want to check this project out and others follow this link to the CU seni
 
 ##This Project
 The underlying principle here is that if two GPS locations are provided by two different recivers a position vector can be calculated between them. This can be used to aim a directional antenna or in the case of this project a laser from one object (the base station) to the other object (Target) at theoretically any distance which is only limited to your ability to provide the base station with the targets GPS location. The theory behind this is very simple and is shown in the figure below. Knowing the horizontal and the vertical difference between points you can use the inverse tangent function to give you the angle that you need. 
-Picture displaying GPS Vector.
+
+->_GPS Vector Diagram_<-
 
 
+
+->_Operational video_<-
 The video below demonstrates the basic functionality of the system. Showing the laser track the target object as it moves
 Video of operation
 
 ##Required Materials	<a id="serial-dtr"></a>
 Now that I have gotten you excited about the project and have you itching to try it yourself I will walk you through the steps to create this project on your own and see what cool things you can do with it. This projects requires a decent amount of hardware but to put all of it together is relatively simple and minimal soldering 
 
+[Anchor Link](https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/using-the-arduino-addon#serial-dtr)
 
-### SparkFun Supplies
 
+### Electrical Supplies
+These are the parts that you will be able to get off of the Sparkfun website, just take a look at my wishlist to get you going. 
 <script src="https://www.sparkfun.com/wish_lists/123390.js"></script>
 
 ### Mechanicle Supplies 
+Here are a few other materials that you will need to construct this system
 
-*Access to a 3D printer
-*Tripod or other platform
-*Mounting Hardware
-**4x 8-32 B&N
-**4x 1/2” spacers with #5 sized hole
-**4x 3-48 B&N
-**8x 2-56 N
-**4x 2-56 ½”
-**4x 2-56 ¾”
-**6x 1-72 ½”
-**6x 1-72 N
+* Tripod or other platform
+* Mounting Hardware
+  * 4x 8-32 B&N
+  * 4x 1/2” spacers with #5 sized hole
+  * 4x 3-48 B&N
+  * 8x 2-56 N
+  * 4x 2-56 ½”
+  * 4x 2-56 ¾”
+  * 6x 1-72 ½”
+  * 6x 1-72 N
+* Access to a 3D printer
+
+### 3D Models
+For this projects the parts were all created on a student edition of solidworks to be printed using My personal 3d printer. My printer is  an [XYZ da Vinci 1.0 AiO](http://us.xyzprinting.com/us_en/Product/da-Vinci-1.0-AiO) and is very useful for making small parts. There are 4 pieces that need to be printed for this project and their files are included below saved as .STL so they can be easily transfered to the 3D printer program. 
+Target  
+_Target file_  
+Base bottom  
+_Base bottom file_  
+Base top  
+_Base top file_  
+Laser Mount  
+_Laser mount file_  
 
 ##Suggested reading
 If anything I have discussed so far doesn’t quite click here are some relevant tutorials to get you up to speed and give you everything you need to know to complete this project.  
@@ -47,17 +64,23 @@ If anything I have discussed so far doesn’t quite click here are some relevant
 [GPS basics](https://learn.sparkfun.com/tutorials/gps-basics)  
 [XBee sheild hookup guide](https://learn.sparkfun.com/tutorials/xbee-shield-hookup-guide)  
 [Serial communication](https://learn.sparkfun.com/tutorials/serial-communication)  
-[Configuring XBe's](https://learn.sparkfun.com/tutorials/exploring-xbees-and-xctu-retired)  
+[Configuring XBee's](https://learn.sparkfun.com/tutorials/exploring-xbees-and-xctu-retired)  
+[Servo Basics](https://www.sparkfun.com/tutorials/283)
 
 ###Electronics assembly
 _Note: You will have to take off the Xbee sheild to mount on the final system_  
+The electronics in this project all plug directly into pins on the Xbee shield (with the exceptiion of the laser diode) which makes this part pretty strait forward.
+* First, you will need to configure both Xbee's so that they are set up on the right channel.This is described in detail [HERE](https://learn.sparkfun.com/tutorials/exploring-xbees-and-xctu-retired).
+* Once everything is configured you will need to create two identical assemblies of the redboard with the Xbee sheilds attached. Stackable headers will need to be soldered onto the Xbee sheild.
+_Picture of twin assemblies_
+* Next you will need to prep the wires of the two GPS recivers and the servo so they can easily be plugged into the sheild 
+_picture before and after?_
+* The last step will be to connect the Laser diode. To do this you will first need to solder stranded wire to the two holes located on the electronics board.  Be careful when soldering these because too much heat can fry the lasers electronics
+_Picture of wires being soldered to eboard_
+*Because the laser will be moving these wires cannot just be plugged into the XBee sheild so we will solder the ground to the ground pin to the availible Ground pad and the supply inline with a 10 &ohm resistor.
+_picture of this connection_
 
-* Configure xbees using explorer and XTCU program (enter addresses, can be done through Arduino code but this is a simpler interface)
-* Create two complete XBee sheild assemblyes 
-* Modify GPS wires so that they can connect to redboard inputs 
-* Modify Servo wires to allow plug into redboard
-* Solder stranded wire to laser and solder the other ends to X and X
-
+Here is how all of these should be connected onto the Xbee Sheild(do i need redboard in diagram?)
 Connection diagram (fritzing)
 
 ####Base station 
