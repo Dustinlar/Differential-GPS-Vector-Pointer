@@ -2,7 +2,7 @@
 
 ##Introduction
 
-GPS technology is a very useful and elegant technology, the satellites used in this network do most of the work so that the GPS receiver can be made small and simple. As GPS technology becomes more and more accurate, applications in many areas have really taken off. Some of these include driverless cars, mission planning for UAV, and assisted landing of commercial aircraft and many more. GPS systems vary in cost depending on how accurate they are and what other functions they provide so the right receiver needs to be chosen for application. In this project I am demonstrating that you don’t need an expensive receiver to do cool things with this technology. 
+GPS technology is a very useful and elegant technology, the satellites used in this network do most of the work so that the GPS receiver can be made small and simple. As GPS technology becomes more and more accurate, applications in many areas have really taken off. Some of these include driverless cars, mission planning for UAV's, assisted landing of commercial aircraft and many more. GPS systems vary in cost depending on how accurate they are and what other functions they provide so the right receiver needs to be chosen for application. In this project I am demonstrating that you don’t need an expensive receiver to do cool things with this technology. 
 This project began as a proof of concept for the ANACONDA 2014/2015 Aerospace Senior project whose mission was to,
 
 >“Design and construct an autonomous tracking and communication support system for an antenna to be used to track unmanned aircraft during flight.”
