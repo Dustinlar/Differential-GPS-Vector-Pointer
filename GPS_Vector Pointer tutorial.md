@@ -81,7 +81,7 @@ The electronics in this project all plug directly into pins on the Xbee shield (
 
 ->_(7)XbeeshieldAssym_<-
 
-* Next you will need to prepare the wires of the two GPS recivers and the servo so they can easily be plugged into the sheild. I cut off the existing connectors and soldered them to the wires after the connector is cut off [these](https://www.sparkfun.com/products/13685). The wires for the target GPS reciver can be made shorter so you dont have excess wire but this is up to you just make sure you leave enough length to reach the pins.
+* Next you will need to prepare the wires of the two GPS recivers and the servo so they can easily be plugged into the sheild. I cut off the existing connectors and soldered them to the wires after the connector is cut off the existing [connector](https://www.sparkfun.com/products/13685). The wires for the target GPS reciver can be made shorter so you dont have excess wire but this is up to you just make sure you leave enough length to reach the pins.
 
 ->_(8)Preppedcables_<-
 
@@ -117,19 +117,20 @@ Here is how all of these should be connected onto the Xbee Sheild
 
 #####Top
 * Remove Circular disk from servo by removing attachment screw
-* Place servo in the availible cavity with the output gear closer to the GPS cavity. Once in screw 8-32 into 4 counting holes of servo which constrains servo in the correct location. You shouldnt need nuts for the other side since the holes are close fit and the ABS used is soft and allows you to easily screw to a tight fit.
+* Place servo in the availible cavity with the output gear closer to the GPS cavity. Once in place, screw the 4 8-32 into the availible holes of servo which constrains the servo in the correct location. You shouldnt need nuts for the other side since the holes are close fit and the ABS used is soft and allows them to easily thread themselves into place.
 
 ->_(15)Servomount_<-
-* Attach circular servo disk to laser mount concetricaly with the hole on the bottom on laser mount. mount this by placing two 0-80 Flathead screws through the countersunk holes within the laser cavity. You may need to open up the holes on the circular wheel since they will be used as pins and you will not be able to screw them in. These are to ensure that the two parts are connected in the right orientation and if loose you may need to use an adhesive to attach these.
+
+* Attach the circular servo disk to the laser mount concetricaly with the hole on the bottom on laser mount. Attach this by placing two 0-80 Flathead screws through the countersunk holes within the laser cavity. You may need to open up the holes on the circular wheel since they will be used as pins and you will not be able to screw them in. These are to ensure that the two parts are connected in the right orientation and if loose you may need to use an adhesive to attach these.
 
 ->_(16)Lasermount_<-
 
-* Next you will attach this assembly to the servo. Slide the circular disk back onto the servo then use the screw you took out to screw it back on using the availible hole in the laser mount to access it with a screw driver. You will probebly need to ensure that 90 degrees commanded to the servo has the assembly pointed directly perpendicular to the arrow. A simple sketch can help you out with this because any error will throw off the whole system.
+* Next you will attach this assembly to the servo. Slide the circular disk back onto the servo then use the screw you took out to screw it back on using the availible hole in the laser mount to access it with a screw driver. You will probebly need to ensure that 90 degrees commanded to the servo has the assembly pointed directly perpendicular to the arrow. The SimpleServo blinky sketch can help you out with this because any error will throw off the whole system.
 
 ->_(17)mounttoservo_<-
 
 * Push the laser through the hole in the top platform and into laser mount. you will have to do this first since the other side is already soldered onto Xbee shield
-* Place O ring over exposed part of the laser to hold it in place. This can be a little finicky so you can use glue from a glue gun to hold it in place as an alternative.
+* Place the O-ring over exposed part of the laser to hold it in place. This can be a little finicky so you can use glue from a glue gun to hold it in place as an alternative if it wont stay.
 
 ->_(18)PlaceLaser_<-
 
@@ -163,9 +164,9 @@ _Target Code_
 _Base code_
 
 ##Operation
-To make sure that the system aligns with the earth reference ensure the system is in the the correct orientationm by using a compass to lining up the arrow with North on the Base Station top (This could be done electronically using a magnetometer). Once powered up , both systems will sit idly as they aquire satellite lock. Once both have made a lock(maybe take up to a minute) the laser will turn on And the servo will point to where it believes the target object is. This will update continuously to point at the most recent location  of the target object. If the angle is substantially off or the servo is maxed out in one direction you might need to make sure the whole system is pointing in the right direction since it is limited in whhich direction it works 
+To make sure that the system aligns with the earth reference ensure the system is in the the correct orientation by using the compass to line up the arrow on the Base Station top with North. Once powered up, both systems will sit idly as they aquire satellite lock. Once both have made a lock(may take up to a minute) the laser will turn on And the servo will point to where it believes the target object is. This will update continuously to point at the most recent location of the target object. If the angle is substantially off or the servo is maxed out in one direction you might need to make sure the whole system is pointing in the right direction since it is limited in which direction it works. The video below shows the system in action.
+
+->_Operational video_<-
 
 Warning! Laser can be harful to eyes so if you are the one holding the target object it would be a good safety measure to have laser glasses for 532nm wavelength. 
 
-##Going further
-I hope you enjoyed this tutorial and if you make any additions to the code or hardware I would love to see what you do. A magnetometer could be added so that it can automatically lock with the earths reference frame. This could also work in 3 dimentions so if a two DOF gimbal is added you can track the object anywhere.
