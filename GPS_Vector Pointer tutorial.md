@@ -89,11 +89,7 @@ The electronics in this project all plug directly into pins on the Xbee shield (
 
 ->_(9)Laserwireconnection_<-
 
-*Because the laser will be moving these wires cannot just be plugged into the XBee sheild we will solder the ground wire to the availible Grounded pad and the supply inline with a 10 &ohm resistor. and this will be done on the Xbee sheild used on the base(do i need this? will I be able to regulate using PMW?)
-
-->_picture of this connection still needed_<-
-
-Here is how all of these should be connected onto the Xbee Sheild
+*Because the laser will be moving these wires cannot just be plugged into the XBee sheild we will solder the ground wire to the availible Grounded pad and the 3.3V pad as shown on the Fritzing diagram. This will be done on the Xbee sheild used on the base. Here is how all of these should be connected onto the Xbee Sheild
 
 ->_(11)CircuitDiagrams_<-
 
@@ -164,7 +160,7 @@ _Target Code_
 _Base code_
 
 ##Operation
-To make sure that the system aligns with the earth reference ensure the system is in the the correct orientation by using the compass to line up the arrow on the Base Station top with North. Once powered up, both systems will sit idly as they aquire satellite lock. Once both have made a lock(may take up to a minute) the laser will turn on And the servo will point to where it believes the target object is. This will update continuously to point at the most recent location of the target object. If the angle is substantially off or the servo is maxed out in one direction you might need to make sure the whole system is pointing in the right direction since it is limited in which direction it works. The video below shows the system in action.
+To make sure that the system aligns with the earth reference frame ensure the system is in the the correct orientation by using the compass to line the arrow on the Base Station top with North. Once powered up, both systems will sit idly as they aquire satellite lock. Once both have made a lock which may take up to a minute, the servo will point to where it believes the target object is. This will update continuously to point at the most recent location of the target object. If the angle is substantially off or the servo is maxed out in one direction you might need to make sure the whole system is pointing in the right direction since it is limited in which direction it works. The video below shows the system in action.
 
 ->_Operational video_<-
 
